@@ -11,95 +11,139 @@
 }
 //var to use it multiple times without wasting code
 :root {
-    --color-primary: black;
-    --color-background: rgb(241, 222, 248);
-}
-body{
-      height: 100vh;
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(241, 222, 248);
-      background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(209, 126, 192));
-  
+  --color-primary: black;
+  --color-background: rgb(241, 222, 248);
 }
 
-h1{
-    font-family: 'Ladi';
-    font-size: 6em;
-    margin: 0;
-    transition: all .4s ease-in-out;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(241, 222, 248);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(223, 193, 217));
 }
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    font-family: 'ladi';
+
+h1 {
+  font-family: "Ladi";
+  font-size: 4em;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: blue;
+      &:hover{
+        color: rgb(183, 255, 0);
+    }
 }
-header{
-    height: 100vh;
-    color: var(--color-background);
-    overflow: hidden;
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
-section{
-    min-height: 100vh;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 3rem 18rem;
+
+header {
+  height: 100vh;
+  color: var(--color-background);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
 }
-.section{
-    transform: translate(-100%);
-    // transition: all .4s ease-in-out;
-    background-color: antiquewhite;
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem;
 }
+
+.section {
+  transform: translate(-100%);
+  transition: all 0.4s ease-in-out;
+  /* background-color: antiquewhite; */
+}/*# sourceMappingURL=styles.css.map */
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 3%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translate(Y)(-50%);
+font-family: 'Montserrat', sans-serif;
+}
+ .control{
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        border: none;
+        color: blue;
+            &:hover{
+        color: rgb(183, 255, 0);
+          transition: all 0.2s ease-in-out;
+
+    }
+    }
+
 .sect1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: salmon;
 }
 .sect2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: aqua;
 }
 .sect3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: aquamarine;
 }
 .sect4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: beige;
 }
-.sect5{
+.sec5{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: pink;
 }
     .active-btn{
-            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(120, 36, 104));
-
-    /* transition: all 1s ease-in-out; */
-    border-radius: 100px;
+        &:hover{
+        color: rgb(183, 255, 0);
+    }
+    
 
 }
    .active{
     display: block;
 }
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  
 
-//     .active-btn{
-//         background-color: green($color: #000000);
-//     // transition: all 1s ease-in-out;
-//     border-radius: 10px;
+}
 
-// }
+.main-bio{
+.image{
+    max-width: 90%;
+    height: auto;
+    margin-left: 2rem;
+    &:hover{
+        background-color: rgb(183, 255, 0);
+    }
+}
+}
 
-
-
-
-
-
+.right-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 0.7em;
+    padding-right: 1rem;
+  
+}

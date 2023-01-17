@@ -21,27 +21,32 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: rgb(241, 222, 248);
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(209, 126, 192));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(223, 193, 217));
 }
 
 h1 {
   font-family: "Ladi";
-  font-size: 6em;
-  margin: 0;
-  transition: all 0.4s ease-in-out;
+  font-size: 4em;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+  color: blue;
+}
+h1:hover {
+  color: rgb(183, 255, 0);
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  font-family: "ladi";
 }
 
 header {
   height: 100vh;
   color: var(--color-background);
   overflow: hidden;
+  display: flex;
+  align-items: flex-start;
 }
 
 section {
@@ -57,60 +62,85 @@ section {
   transform: translate(-100%);
   transition: all 0.4s ease-in-out;
   /* background-color: antiquewhite; */
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
 .controls {
-    position: fixed;
-    z-index: 10;
-    top: 50%;
-    right: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translate(Y)(-50%);
-      font-family: "ladi";
+  position: fixed;
+  z-index: 10;
+  top: 3%;
+  right: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: translate(Y) -50%;
+  font-family: "Montserrat", sans-serif;
+}
 
-   
+.control {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  color: blue;
 }
- .control{
-        padding: 1rem;
-        cursor: pointer;
-        font-size: 2rem;
-        border: none;
-        color: #fff;
-        /* background-color: rgb(223, 232, 232); */
-    }
+.control:hover {
+  color: rgb(183, 255, 0);
+  transition: all 0.2s ease-in-out;
+}
 
-.sect1{
-    display: none;
-    transform: translateY(0) scale(1);
+.sect1 {
+  display: none;
+  transform: translateY(0) scale(1);
 }
-.sect2{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: pink;
-}
-.sect3{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: rgb(147, 60, 74);
-}
-.sect4{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: rgb(213, 188, 192);
-}
-.sec5{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: rgb(235, 14, 50);
-}
-    .active-btn{
-            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(120, 36, 104));
 
-    border-radius: 100px;
+.sect2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
 
+.sect3 {
+  display: none;
+  transform: translateY(0) scale(1);
 }
-   .active{
-    display: block;
+
+.sect4 {
+  display: none;
+  transform: translateY(0) scale(1);
 }
+
+.sec5 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.active-btn:hover {
+  color: rgb(183, 255, 0);
+}
+
+.active {
+  display: block;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+}
+
+.main-bio .image {
+  max-width: 90%;
+  height: auto;
+  margin-left: 2rem;
+}
+.main-bio .image:hover {
+  background-color: rgb(183, 255, 0);
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 0.7em;
+  padding-right: 1rem;
+}/*# sourceMappingURL=styles.css.map */
