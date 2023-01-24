@@ -116,31 +116,37 @@ section {
 .active-btn:hover {
   color: rgb(183, 255, 0);
 }
+.active-btn .header-heart:hover {
+  color: rgb(183, 255, 0);
+}
 
 .active {
   display: block;
 }
 
-.header-content {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  height: 100%;
-}
-
-.main-bio .image {
-  max-width: 90%;
-  height: auto;
-  margin-left: 2rem;
-}
-.main-bio .image:hover {
-  background-color: rgb(183, 255, 0);
-}
-
-.right-header {
+.name {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
   justify-content: center;
-  padding-top: 2rem;
-  font-size: 0.7em;
-  padding-right: 1rem;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-header img {
+  max-width: 70%;
+  height: auto;
+  filter: blur(5px);
+}
+.left-header img:hover {
+  filter: blur(0px);
 }/*# sourceMappingURL=styles.css.map */
