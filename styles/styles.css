@@ -108,6 +108,11 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
+.sect4 .bio-container {
+  position: relative;
+  text-align: center;
+  color: red;
+}
 .sect4 .bio-pic {
   max-width: 70%;
   height: auto;
@@ -117,6 +122,15 @@ section {
 }
 .sect4 .bio-pic:hover {
   filter: blur(0px);
+}
+.sect4 p {
+  font-family: "Montserrat", sans-serif;
+  color: blue;
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sec5 {
