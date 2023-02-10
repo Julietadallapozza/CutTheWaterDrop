@@ -17,7 +17,6 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,28 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  font-family: inherit;
 }
+.social-net {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  a {
+    color: blue;
+
+    &:hover {
+      color: rgb(183, 255, 0);
+
+    } }}
 
 
 header {
@@ -56,16 +76,16 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
+  // position: absolute;
   left: 0;
   top: 0;
   padding: 3rem 18rem;
 }
 
 .section {
-  transform: translate(-100%);
+  transform: translateY(-100%);
   transition: all 0.4s ease-in-out;
-  width: 90%;
+  // width: 90%;
   /* background-color: antiquewhite; */
 }
 
@@ -103,9 +123,40 @@ section {
 }
 
 .sect2 {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    font-size: 1em;
+  }
+
+  .publi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    align-items: end;
+
+    .publi-one-pic {
+      max-width: 80%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    // .hover-items{
+    //   width: 10%;
+    //   height: 10%;
+    //   background-color: aqua;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0
+    //   ;
+    // }
+  }
+
   display: none;
   transform: translateY(0) scale(1);
 }
+
 
 .sect3 {
   display: none;
@@ -173,37 +224,39 @@ section {
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-column-gap: 10px;
+  height: 80%;
   // width: 80%;
   // height: 100%;
-  // width: 200vh;
+  width: 200vh;
   justify-content: center;
+  align-content: center;
+      justify-items: center;
 
-  .left-header {
-    .social-net {
-      display: flex;
-      flex-direction: column;
-      font-family: 'Montserrat', sans-serif;
-      height: 100%;
-      width: 160px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
 
-      a {
-        color: blue;
+  .social-net {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 
-        &:hover {
-          color: rgb(183, 255, 0);
+    a {
+      color: blue;
 
-        }
+      &:hover {
+        color: rgb(183, 255, 0);
 
       }
+
+
     }
 
     display: flex;
@@ -222,6 +275,7 @@ section {
 
     // }
   }
+  
 
   .right-header {
     p {

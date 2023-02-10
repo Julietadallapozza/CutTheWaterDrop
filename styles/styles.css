@@ -15,7 +15,6 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +38,27 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  font-family: inherit;
+}
+
+.social-net {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.social-net a {
+  color: blue;
+}
+.social-net a:hover {
+  color: rgb(183, 255, 0);
 }
 
 header {
@@ -52,20 +72,18 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
   left: 0;
   top: 0;
   padding: 3rem 18rem;
 }
 
 .section {
-  transform: translate(-100%);
+  transform: translateY(-100%);
   transition: all 0.4s ease-in-out;
-  width: 90%;
   /* background-color: antiquewhite; */
 }
 
-/*# sourceMappingURL=styles.css.map */
+
 .controls {
   position: fixed;
   z-index: 10;
@@ -99,6 +117,24 @@ section {
 .sect2 {
   display: none;
   transform: translateY(0) scale(1);
+}
+.sect2 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: blue;
+  font-size: 1em;
+}
+.sect2 .publi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  align-items: end;
+}
+.sect2 .publi-container .publi-one-pic {
+  max-width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sect3 {
@@ -159,17 +195,14 @@ section {
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  height: 80%;
+  width: 200vh;
   justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
-.header-content .left-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header-content .left-header .social-net {
+.header-content .social-net {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
@@ -181,11 +214,14 @@ section {
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.header-content .left-header .social-net a {
+.header-content .social-net a {
   color: blue;
 }
-.header-content .left-header .social-net a:hover {
+.header-content .social-net a:hover {
   color: rgb(183, 255, 0);
 }
 .header-content .right-header p {
