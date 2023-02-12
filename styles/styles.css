@@ -195,12 +195,10 @@ section {
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 60%);
   height: 80%;
-  width: 200vh;
   justify-content: center;
   align-content: center;
-  justify-items: center;
 }
 .header-content .social-net {
   display: flex;
@@ -224,7 +222,28 @@ section {
 .header-content .social-net a:hover {
   color: rgb(183, 255, 0);
 }
+.header-content .square {
+  position: fixed;
+  border-radius: 25px;
+  border: 1px solid #1513cf;
+  width: 200px;
+  height: 140px;
+  position: relative;
+  left: 50%;
+  color: blue;
+}
+.header-content .square:hover {
+  color: rgb(183, 255, 0);
+}
 .header-content .right-header p {
   color: blue;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 10px;
+}
+
+.left-header p {
+  font-size: 2.3em;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -5px;
 }/*# sourceMappingURL=styles.css.map */
