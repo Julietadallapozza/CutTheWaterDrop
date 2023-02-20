@@ -1,6 +1,15 @@
+@import url(_media.scss);
 @font-face {
   font-family: "Ladi";
   src: url(fonts/Ladi-Weak.otf);
+}
+@font-face {
+  font-family: "Some";
+  src: url(sometalksdemo-8mdrz-webfont.woff);
+}
+@font-face {
+  font-family: "Ring";
+  src: url(ringift.ttf);
 }
 * {
   margin: 0;
@@ -24,11 +33,12 @@ body {
 }
 
 h1 {
-  font-family: "Ladi";
-  font-size: 4em;
-  margin: 1rem;
+  font-family: "Some";
+  font-size: 3em;
   transition: all 0.2s ease-in-out;
   color: blue;
+  padding: 0.6em;
+  margin-right: 5%;
 }
 h1:hover {
   color: rgb(183, 255, 0);
@@ -130,7 +140,30 @@ section {
   margin-top: 3rem;
   align-items: end;
 }
+.sect2 .publi-container p {
+  font-family: "Some";
+  color: blue;
+  text-align: center;
+}
 .sect2 .publi-container .publi-one-pic {
+  max-width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sect2 .publi-container .publi-two-pic {
+  max-width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sect2 .publi-container .publi-three-pic {
+  max-width: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sect2 .publi-container .publi-four-pic {
   max-width: 80%;
   height: auto;
   -o-object-fit: cover;
@@ -140,6 +173,20 @@ section {
 .sect3 {
   display: none;
   transform: translateY(0) scale(1);
+}
+.sect3 .proyectos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  align-items: end;
+}
+.sect3 .proyectos-container h1 {
+  font-size: 1em;
+}
+.sect3 .proyectos-container p {
+  font-family: "Montserrat", sans-serif;
+  color: blue;
 }
 
 .sect4 {
@@ -154,7 +201,6 @@ section {
 .sect5 .bio-container {
   position: relative;
   text-align: center;
-  color: red;
 }
 .sect5 .bio-pic {
   max-width: 70%;
@@ -246,4 +292,29 @@ section {
   font-size: 2.3em;
   font-family: "Montserrat", sans-serif;
   letter-spacing: -5px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-net {
+    align-items: flex-start;
+    margin-left: 2%;
+  }
+  header {
+    height: 10%;
+  }
+  .header-content {
+    height: 100%;
+  }
+  .name {
+    flex-direction: row;
+    font-size: 0.9em;
+    margin-top: 12%;
+    margin-left: -15px;
+  }
+  .header-content .square {
+    left: -15%;
+  }
+  .control {
+    padding: 0.3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
