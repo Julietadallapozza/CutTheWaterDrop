@@ -1,0 +1,4 @@
+[[headers]]
+/karenbyk/fonts/*.ttf
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-ttf
