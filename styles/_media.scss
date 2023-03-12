@@ -8,6 +8,13 @@
   }
   .header-content{
     height: 100%;
+    margin-bottom: 1rem;
+        font-size: 0.8em;
+     .right-header{
+      p{
+        letter-spacing: 0px;
+      }
+     }
   }
   .name{
     flex-direction: row;

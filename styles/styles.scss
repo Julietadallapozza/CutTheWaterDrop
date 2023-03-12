@@ -5,15 +5,9 @@
   src: url(fonts/Ladi-Weak.otf);
 }
 
-@font-face {
-  font-family: 'Some';
-  src: url(sometalksdemo-8mdrz-webfont.woff);
-}
 
-@font-face {
-  font-family: 'Ring';
-  src: url(ringift.ttf);
-}
+
+
 
 * {
   margin: 0;
@@ -33,16 +27,20 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(241, 222, 248);
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(223, 193, 217));
+  background-color: rgb(224, 137, 215, 20%);
+  background-image: radial-gradient(ellipse closest-side at 25% 25%, rgb(235, 231, 0, 0), rgb(250, 7, 201), rgb(197, 166, 191));
 }
 
+
+
+
 h1 {
-  font-family: "Some";
-  font-size: 3em;
+  text-align: left;
+  font-family: "ladi";
+  font-size: 2em;
   // margin: 1rem;
   transition: all 0.2s ease-in-out;
-  color: blue;
+  // color: blue;
   padding: 0.6em;
   margin-right: 5%;
 
@@ -50,6 +48,7 @@ h1 {
     color: rgb(183, 255, 0);
   }
 }
+
 
 a {
   display: inline-block;
@@ -62,8 +61,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  width: 160px;
+  font-family: "ladi";
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -83,7 +82,7 @@ a {
 
 
 header {
-  height: 100vh;
+  // height: 100vh;
   color: var(--color-background);
   overflow: hidden;
   display: flex;
@@ -106,19 +105,6 @@ section {
   /* background-color: antiquewhite; */
 }
 
-/*# sourceMappingURL=styles.css.map */
-.controls {
-  position: fixed;
-  z-index: 10;
-  top: 3%;
-  right: 3%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  transform: translate(Y)(-50%);
-  font-family: 'Montserrat', sans-serif;
-}
 
 .control {
   padding: 1rem;
@@ -248,7 +234,7 @@ section {
 
   p {
     font-family: 'Montserrat', sans-serif;
-    color: blue;
+    // color: blue;
     font-size: 3em;
     position: absolute;
     top: 50%;
@@ -284,7 +270,7 @@ section {
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(1, 60%);
+  grid-template-columns: repeat(1, 100%);
   height: 80%;
   justify-content: center;
   align-content: center;
@@ -292,18 +278,19 @@ section {
   .social-net {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "ladi";
     height: 100%;
-    width: 160px;
+    width: 400px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: 5px;
     overflow-x: hidden;
     padding-top: 20px;
 
     a {
       color: blue;
+      font-family: "ladi";
 
       &:hover {
         color: rgb(183, 255, 0);
@@ -319,11 +306,9 @@ section {
 
     position: fixed;
     border-radius: 25px;
-    border: 1px solid #1513cf;
-    width: 200px;
+    border: 1px #1513cf;
     height: 140px;
     position: relative;
-    left: 50%;
     color: blue;
 
     &:hover {
@@ -360,4 +345,11 @@ section {
 //         // }
 
 // }
+
+@media screen and (min-width: 600px){
+  .chika{
+    font-size: 1rem;
+  }
+}
+
 @import './media';
