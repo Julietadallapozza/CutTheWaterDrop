@@ -269,9 +269,27 @@ section {
   letter-spacing: -5px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .chika {
-    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 600px) {
+  .web-pop {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -220px;
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .social-net a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 3rem;
+    text-align: right;
+    letter-spacing: 5px;
   }
 }
 @media screen and (max-width: 600px) {
